@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/Lbook"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/library_book_poster"
+                    android:layout_width="68dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/no_image_found"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match !!"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/get_message_text"
+                    android:id="@+id/match_text"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/library_add_book_library_button"
+                    android:layout_width="68dp"
+                    android:layout_height="50dp"
+                    android:text="Add"
+                    android:visibility="gone"
+                    android:textColor="@color/whiteCardColor"
+                    android:background="@drawable/add_button"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/library_delete_book_library_button"
+                    android:layout_width="68dp"
+                    android:layout_height="50dp"
+                    android:text="Delete"
+                    android:visibility="gone"
+                    android:textColor="@color/sad"
+                    android:background="@drawable/delete_button"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/library_book_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Name"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/movie_poster"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/library_book_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year :"
+                    app:layout_constraintStart_toEndOf="@+id/movie_poster"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Author: "
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/library_book_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Author :"
+                    app:layout_constraintStart_toEndOf="@+id/movie_poster"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Publisher: "
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/library_book_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Publisher:"
+                    app:layout_constraintStart_toEndOf="@+id/movie_poster"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ISBN: "
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/library_book_isbn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="isbn :"
+                    app:layout_constraintStart_toEndOf="@+id/movie_poster"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/library_bookId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/library_book_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/library_BookUrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

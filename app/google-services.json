@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "610235594377",
+    "firebase_url": "https://mubomatch-match.firebaseio.com",
+    "project_id": "mubomatch-match",
+    "storage_bucket": "mubomatch-match.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610235594377:android:5f4780fa4c2c60be987858",
+        "android_client_info": {
+          "package_name": "com.example.mubomatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610235594377-6qviadlc4mbrapmvavlllefkb030i4mg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mubomatch",
+            "certificate_hash": "e7bd471c900ef908c5b3f661276395f03cb3f64e"
+          }
+        },
+        {
+          "client_id": "610235594377-rqd77es9h3grb677hlirre4uum6228e5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByhy07ojGTywbhxemSF2LJ8HnE9a7RvGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610235594377-rqd77es9h3grb677hlirre4uum6228e5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

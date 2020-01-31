@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat.ChatActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarr"
+        app:tabIndicatorHeight="4dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/cardview_dark_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:src="@drawable/arrow_back"
+                android:layout_marginRight="10dp"
+                android:id="@+id/back_button" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile"
+                android:layout_marginRight="15dp"
+                android:id="@+id/matchPp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/matchNameTitle"
+                android:text="title"
+                android:textStyle="bold"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="23dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendLayout"
+        android:layout_below="@+id/toolbarr"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"/>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:background="@color/darkGreyCardColor"
+        android:id="@+id/sendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="  message..."
+            android:id="@+id/send_text"
+            android:backgroundTint="@color/greyCardColor"
+            />
+
+        <ImageView
+            android:id="@+id/send_button"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/send_message" />
+    </LinearLayout>
+
+
+</RelativeLayout>

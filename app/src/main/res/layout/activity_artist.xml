@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MoviesSearch.MoviesActivity"
+    android:background="@drawable/gradient2background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/cardview_dark_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:src="@drawable/arrow_back"
+                android:layout_marginRight="15dp"
+                android:id="@+id/back_button" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Artist"
+                android:textStyle="bold"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="23dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+
+        android:background="@color/darkGreyCardColor"
+        android:id="@+id/artist_search"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/artistSearchRecyclerView"
+            android:scrollbars="vertical">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+        android:id="@+id/noArtistImage"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/not_found_icon"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/noArtistText"
+        android:text="Nothing Found..."
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="35dp"
+        android:textColor="@color/cardview_dark_background"/>
+
+
+
+</LinearLayout>

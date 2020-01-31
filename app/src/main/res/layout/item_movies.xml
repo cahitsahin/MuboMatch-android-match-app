@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    app:contentPadding="5dp"
+    >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/Movies_Image"
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:src="@mipmap/ic_launcher"
+            android:padding="5dp"
+            android:layout_gravity="center"/>
+
+
+
+</RelativeLayout>

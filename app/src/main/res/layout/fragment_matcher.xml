@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatcherFragment"
+    android:layout_marginBottom="55dp">
+
+
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rotation_degrees="15.5"
+        tools:context=".MainPage.MainActivity" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Match Found"
+        android:textSize="35dp"
+        android:id="@+id/noMatchText"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintEnd_toEndOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

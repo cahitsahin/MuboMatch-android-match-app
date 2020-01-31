@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile.OtherUserActivity"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/greyCardColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:text="title"/>
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:id="@+id/otherProfileImage"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/otherUserName"
+            android:background="@null"
+            android:text="Name"
+            android:layout_marginBottom="40sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Movies "
+            android:textSize="18dp"
+            android:textColor="@color/loginRegisterButton"
+            android:textStyle="bold" />
+
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#DDDCDC"
+            android:outlineSpotShadowColor="#DDDCDC"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="7dp"
+
+            >
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/other_user_movie_recycler"
+                android:padding="2dp"
+
+
+
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

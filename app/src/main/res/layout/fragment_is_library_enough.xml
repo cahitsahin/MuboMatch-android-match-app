@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IsLibraryEnoughFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For Match Add :"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_count"
+        android:text="For Match Add :"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:visibility="gone"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/artist_count"
+        android:text="For Match Add :"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+
+        android:layout_marginTop="35dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_count"
+        android:text="For Match Add :"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+
+        android:layout_marginTop="35dp"
+        android:gravity="center"/>
+
+</LinearLayout>

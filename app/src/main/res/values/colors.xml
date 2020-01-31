@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c43e00</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#ff833a</color>
+    <color name="sad">#121212</color>
+
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#00a5ff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <color name="whiteCardColor">#F3F3F3</color>
+    <color name="loginRegisterButton">#c43e00</color>
+    <color name="lightOrangeColor">#ffad42</color>
+    <color name="greyCardColor">#DDDCDC</color>
+    <color name="darkGreyCardColor">#969696</color>
+    <color name="lightGreyColor">#ffeee9e2</color>
+    <color name="greyLight">#fafafa</color>
+    <color name="startBlue">#09c6df</color>
+    <color name="endBlue">#0bcce6</color>
+
+</resources>

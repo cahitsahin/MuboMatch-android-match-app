@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mubomatch">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ForgetPasswordActivity"></activity>
+        <activity android:name=".MusicSearch.ArtistActivity" />
+        <activity android:name=".BookSearch.BookActivity" />
+        <activity android:name=".Library.OtherUserLibraryActivity" />
+        <activity android:name=".UserProfile.OtherUserActivity" />
+        <activity
+            android:name=".Library.LibraryActivity"
+            android:parentActivityName=".MainPage.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mubomatch.MainPage.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UserProfile.SettingActivity"
+            android:parentActivityName=".MainPage.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mubomatch.MainPage.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MoviesSearch.MoviesActivity"
+            android:parentActivityName=".MainPage.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mubomatch.MainPage.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:parentActivityName=".MainPage.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mubomatch.MainPage.MainActivity" />
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainPage.MainActivity" />
+    </application>
+
+</manifest>

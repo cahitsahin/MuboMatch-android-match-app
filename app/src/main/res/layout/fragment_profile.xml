@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="270dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/gradientbackground"
+                    android:orientation="vertical">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/settingButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginRight="35dp"
+                    android:src="@drawable/setting_icon" />
+
+
+                <ImageView
+                    android:id="@+id/logoutButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="175dp"
+                    android:src="@drawable/logout_icon" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="190dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="195dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/L2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="75dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/greyCardColor"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/movie_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:padding="2dp" />
+
+                    <TextView
+                        android:id="@+id/add_movie_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="35dp"
+                        android:gravity="center"
+                        android:text="Empty Movie Set"
+                        android:textSize="25dp"
+                        android:visibility="gone" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/movie_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="35dp"
+                    android:text="Add Movie   "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/greyCardColor"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/artist_recycler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/add_artist_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="35dp"
+                        android:gravity="center"
+                        android:text="Empty Artist Set"
+                        android:textSize="25dp"
+                        android:visibility="gone" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/artist_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="35dp"
+                    android:text="Add Artist   "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/greyCardColor"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/book_recycler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/add_book_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="35dp"
+                        android:gravity="center"
+                        android:text="Empty Book Set"
+                        android:textSize="25dp"
+                        android:visibility="gone" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <TextView
+                    android:id="@+id/book_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Add Book   "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
