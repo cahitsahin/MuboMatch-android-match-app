@@ -1,10 +1,3 @@
-<h1 align="center">
-<img
-		width="250"
-		alt="MuboMatch - Android Match App"
-		src="https://user-images.githubusercontent.com/24645197/73595751-1c5e2c00-452d-11ea-8058-aee49a905230.png">
-</h1>
-
 <h3 align="center">
 	MuboMatch - Android Match App
 </h3>
